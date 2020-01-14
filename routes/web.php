@@ -22,7 +22,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//para proteger uma rota para só ser possivel acessá-lo estando logado.
 Route::get('/produtos', 'ProdutosControlador@index'); // 1)
+    //->middleware('auth');
+    //->name('produtos');
 
 //Route::get('/produtos', 'ProdutosControlador@index')->name('produtos')->middleware('auth'); // 2)
 

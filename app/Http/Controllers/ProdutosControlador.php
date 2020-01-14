@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class ProdutosControlador extends Controller
 {
+    //para proteger um controlador para só ser possivel acessá-lo estando logado.
     public function __construct() {
-        //$this->middleware('auth'); // 2)
+        $this->middleware('auth'); // 2)
     }
 
     public function index() {

@@ -8,6 +8,7 @@
                 <div class="card-header">Usuário</div>
 
                 <div class="card-body">
+                <!--tudo o que está dentro do @auth só executará se o usuário estiver logado/autenticado-->
                     @auth
                         <h1>Usuário Autenticado</h1>
                         <hr>
@@ -16,6 +17,7 @@
 
                     @endauth
 
+                    <!--tudo o que está dentro do @guest só executará se o usuário não estiver logado/autenticado-->
                     @guest
                         <h1>Usuário NÃO Autenticado</h1>
                     @endguest

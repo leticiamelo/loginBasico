@@ -23,6 +23,7 @@ class DepartamentosControlador extends Controller
         echo "</ul>";
         echo "<hr>";
 
+        //verificar se o usuário está logado. Utilize o "Use Auth" no topo
         if (Auth::check()) {
             $user = Auth::user();
             echo "<h4>Você está logado!</h4>";
